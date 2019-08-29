@@ -91,8 +91,7 @@ fi
 ######################
 
 cp -r ${FRAMEWORK} ${OUTPUT}
-
-
+cp -r ${FRAMEWORK} ${OUTPUT}/../../CorePublic/Output
 
 ######################
 # Remove Build folder
