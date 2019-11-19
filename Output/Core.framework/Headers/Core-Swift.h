@@ -299,6 +299,19 @@ SWIFT_CLASS("_TtC4Core16CoreMediaManager")
 - (void)captureOutput:(AVCapturePhotoOutput * _Nonnull)output didFinishProcessingPhoto:(AVCapturePhoto * _Nonnull)photo error:(NSError * _Nullable)error;
 @end
 
+
+SWIFT_CLASS("_TtC4Core19CoreMonthYearPicker")
+@interface CoreMonthYearPicker : UIPickerView <UIPickerViewDataSource, UIPickerViewDelegate>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+@end
+
 @class NSTextContainer;
 
 SWIFT_CLASS("_TtC4Core22CoreMultilineTextInput")
@@ -320,6 +333,15 @@ SWIFT_CLASS("_TtC4Core18CoreNetworkManager")
 
 SWIFT_CLASS("_TtC4Core15CorePageControl")
 @interface CorePageControl : UIPageControl
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC4Core14CorePickerView")
+@interface CorePickerView : UIPickerView
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
 - (void)drawRect:(CGRect)rect;
@@ -376,6 +398,8 @@ SWIFT_CLASS("_TtC4Core11CoreWebView")
 - (void)drawRect:(CGRect)rect;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 @end
+
+
 
 
 
